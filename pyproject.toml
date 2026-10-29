@@ -9,6 +9,7 @@ dependencies = [
     "psycopg[binary]>=3.2.13",
     "pydantic>=2.13.5",
     "ruff>=0.17.3",
+    "sqlalchemy>=2.0.55",
 ]
 
 [project.scripts]
