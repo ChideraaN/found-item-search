@@ -39,20 +39,17 @@ def valid_row(n, rng):
     }
 
 
-def break_row(row, rng, used_ids):
-    """Corrupt one field in a way that mirrors the hand-made bad rows."""
+def break_row(row, rng):
+    """Corrupt one non-key field in a way that mirrors the hand-made bad rows.
+
+    report_id is the primary key, so it is never touched: every row keeps a
+    unique, well-formed ID and only the other columns can be broken.
+    """
     kind = rng.choice([
-        "missing_id", "duplicate_id", "bad_id_format", "missing_colour",
-        "bad_form", "bad_shell", "shell_on_backpack", "missing_weight",
+        "missing_colour", "bad_form", "bad_shell", "shell_on_backpack", "missing_weight",
         "negative_weight", "outlier_weight", "text_weight", "messy_case",
     ])
-    if kind == "missing_id":
-        row["report_id"] = ""
-    elif kind == "duplicate_id" and used_ids:
-        row["report_id"] = rng.choice(used_ids)
-    elif kind == "bad_id_format":
-        row["report_id"] = rng.choice(["1099", "RPT-12", "r_88", "R-"])
-    elif kind == "missing_colour":
+    if kind == "missing_colour":
         row["colour"] = ""
     elif kind == "bad_form":
         row["bag_form"] = rng.choice(["banana", "box", "", "SUITCASE "])
@@ -87,15 +84,17 @@ def main():
     args = p.parse_args()
 
     rng = random.Random(args.seed)
-    rows, used_ids, broken = [], [], 0
+    rows, broken = [], 0
 
     for i in range(args.count):
         row = valid_row(args.start + i, rng)
-        used_ids.append(row["report_id"])
         if rng.random() < args.broken_rate:
-            break_row(row, rng, used_ids[:-1])
+            break_row(row, rng)
             broken += 1
         rows.append(row)
+
+    ids = [r["report_id"] for r in rows]
+    assert len(ids) == len(set(ids)) and all(ids), "report_id must be unique and non-empty"
 
     with open(args.out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=HEADER)

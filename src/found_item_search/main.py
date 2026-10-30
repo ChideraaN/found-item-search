@@ -14,13 +14,22 @@ PGDATABASE=os.getenv("PGDATABASE")
 with open('reports.csv', 'r', encoding='utf=8') as file:
     reader = csv.DictReader(file)
     rows = list(reader)
-    print(rows)
+
+bags = []
+fails = []
+for row in rows:
+    try:
+        bag = Bag(**row)
+        bags.append(bag)
+    except ValueError as e:
+        fails.append(row)
+
 
 with psycopg.connect(f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}") as conn:
     with conn.cursor() as cur:
-        
-        cur.execute(f"SELECT * FROM {PGDATABASE}")
-        for record in cur:
-            print(record)
+    
+        for bag in bags:
+            cur.execute("INSERT INTO bag_reports VALUES (%s, %s, %s, %s, %s, %s)", 
+            (bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg))
 
     conn.commit()
