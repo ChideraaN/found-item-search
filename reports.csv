@@ -1,0 +1,1001 @@
+report_id,colour,bag_form,shell,brand,weight_kg
+R-1001,red,duffel,,,9.3
+R-1002,red,duffel,,Longchamp,7.0
+R-1003,blue,suitcase,hard,Samsonite,17.9
+R-1004,maroon,duffel,,Adidas,13.1
+R-1005,grey,suitcase,soft,Away,13.0
+R-1006,blue,suitcase,soft,,21.9
+R-1007,beige,suitcase,hard,Antler,11.1
+R-1008,white,duffel,,Longchamp,6.8
+R-1009,blue,backpack,,Osprey,7.0
+R-1010,grey,backpack,,The North Face,9.4
+R-1011,blue,duffel,,Nike,12.4
+R-1012,yellow,backpack,,The North Face,9.5
+R-1013,brown,suitcase,hard,Antler,13.7
+R-1014,purple,duffel,,Adidas,10.7
+R-1015,green,backpack,,The North Face,10.0
+R-1016,teal,duffel,,Adidas,10.3
+R-1017,olive,suitcase,soft,,10.7
+R-1018,grey,duffel,,Adidas,13.2
+R-1019,BEIGE ,duffel,,Longchamp,16.3
+R-1020,maroon,suitcase,soft,Delsey,11.6
+R-1021,black,backpack,,Fjallraven,11.8
+R-1022,red,duffel,,Adidas,16.1
+R-1023,green,suitcase,soft,Samsonite,18.4
+R-1024,white,suitcase,soft,Rimowa,22.3
+R-1025,charcoal,suitcase,hard,Away,11.8
+R-1026,grey,duffel,,Longchamp,11.1
+R-1027,silver,duffel,,Adidas,17.9
+R-1028,olive,backpack,,The North Face,5.8
+R-1029,maroon,duffel,,Nike,6.1
+R-1030,brown,suitcase,hard,Delsey,11.0
+R-1031,charcoal,duffel,,Nike,14.7
+R-1032,charcoal,duffel,,Adidas,15.7
+R-1033,teal,suitcase,soft,Briggs & Riley,22.1
+R-1034,red,duffel,,,14.7
+R-1035,brown,suitcase,hard,Briggs & Riley,12.0
+R-1036,brown,backpack,,Osprey,7.5
+R-1037,red,duffel,,,18.0
+R-1038,brown,suitcase,hard,Briggs & Riley,13.0
+R-1039,grey,suitcase,soft,,15.5
+R-1040,orange,backpack,,Berghaus,5.2
+R-1041,maroon,suitcase,hard,Samsonite,10.7
+R-1042,grey,duffel,,,12.1
+R-1027,blue,suitcase,hard,Rimowa,18.1
+R-1044,olive,duffel,,Adidas,8.5
+R-1045,pink,suitcase,soft,,19.0
+R-1046,black,suitcase,soft,Tumi,11.0
+R-1047,green,backpack,,Osprey,11.0
+R-1048,beige,suitcase,soft,Samsonite,19.4
+R-1049,red,duffel,,Nike,9.2
+R-1050,maroon,duffel,,Adidas,13.3
+R-1051,pink,suitcase,soft,Samsonite,11.3
+R-1052,navy,backpack,,,10.2
+R-1053,grey,backpack,,Berghaus,8.5
+R-1054,green,duffel,,Adidas,13.0
+R-1055,navy,suitcase,soft,Samsonite,22.6
+R-1056,red,suitcase,soft,Antler,23.6
+R-1057,grey,suitcase,hard,Samsonite,12.5
+R-1058,brown,backpack,,Osprey,
+R-1059,silver,suitcase,soft,Rimowa,13.1
+R-1060,purple,backpack,,Osprey,11.7
+R-1061,olive,box,,Longchamp,10.0
+R-1062,pink,duffel,,,13.2
+R-1063,teal,backpack,,Osprey,7.1
+R-1064,navy,backpack,,Osprey,8.2
+R-1065,silver,duffel,,Nike,17.4
+R-1066,purple,duffel,,Nike,14.6
+R-1067,teal,backpack,,Fjallraven,8.4
+R-1068,yellow,duffel,,Nike,13.4
+R-1069,black,duffel,,Nike,11.2
+R-1070,purple,duffel,,Adidas,14.1
+R-1071,grey,duffel,,Adidas,12.2
+R-1072,blue,backpack,,The North Face,9.4
+R-1073,green,suitcase,hard,,23.8
+R-1074,beige,suitcase,soft,Rimowa,20.1
+R-1075,brown,backpack,,,9.5
+R-1076,teal,suitcase,hard,Briggs & Riley,10.7
+R-1077,beige,suitcase,hard,Delsey,23.3
+R-1078,olive,duffel,,Longchamp,11.4
+R-1079,beige,backpack,,The North Face,10.7
+R-1080,charcoal,duffel,,Adidas,11.3
+R-1081,pink,suitcase,soft,Tumi,11.9
+R-1082,green,duffel,,Nike,11.0
+R-1083,teal,backpack,,,10.7
+R-1084,black,suitcase,medium,Longchamp,10.6
+R-1085,teal,backpack,,The North Face,7.9
+R-1086,black,backpack,,Berghaus,9.8
+R-1087,maroon,suitcase,hard,Samsonite,11.2
+R-1088,grey,backpack,,,7.0
+R-1089,purple,backpack,,Berghaus,6.2
+R-1090,pink,backpack,,Berghaus,4.2
+R-1091,brown,backpack,,Osprey,10.0
+R-1092,black,suitcase,hard,Briggs & Riley,19.4
+R-1093,beige,suitcase,soft,Away,18.5
+R-1094,red,duffel,,Nike,17.6
+R-1095,orange,suitcase,soft,Rimowa,11.1
+R-1096,brown,duffel,,,15.3
+R-1097,red,duffel,,Longchamp,15.4
+R-1098,white,backpack,hard,,9.2
+R-1099,red,backpack,,Fjallraven,9.1
+R-1100,green,duffel,,Longchamp,12.3
+R-1101,maroon,duffel,,Adidas,11.2
+R-1102,purple,backpack,,Osprey,6.2
+R-1103,yellow,backpack,,Berghaus,10.8
+R-1104,white,suitcase,soft,American Tourister,17.8
+R-1105,blue,suitcase,hard,Briggs & Riley,17.8
+R-1106,charcoal,backpack,,Osprey,4.7
+R-1107,brown,duffel,,Longchamp,10.4
+R-1108,teal,backpack,,Fjallraven,6.8
+R-1109,pink,backpack,,The North Face,6.5
+R-1110,grey,duffel,,Longchamp,11.8
+R-1111,orange,duffel,,Nike,9.6
+R-1112,black,backpack,,The North Face,6.2
+R-1113,orange,duffel,,Nike,13.7
+R-1114,black,suitcase,soft,Briggs & Riley,14.8
+R-1115,charcoal,backpack,,,4.5
+R-1116,navy,duffel,,Longchamp,17.4
+R-1117,red,suitcase,soft,Rimowa,20.9
+R-1118,orange,backpack,,Berghaus,6.4
+R-1119,red,duffel,,Nike,13.5
+R-1120,grey,suitcase,hard,Tumi,12.2
+R-1121,charcoal,duffel,,Nike,9.5
+R-1122,blue,backpack,,Fjallraven,10.3
+R-1123,silver,duffel,,Longchamp,8.7
+R-1124,green,backpack,,,5.3
+R-1125,orange,duffel,,Adidas,14.3
+R-1126,olive,backpack,hard,Berghaus,4.6
+R-1127,purple,duffel,,Nike,7.1
+R-1128,black,duffel,,Longchamp,15.9
+R-1129,charcoal,suitcase,soft,Away,24.0
+R-1130,blue,backpack,,Berghaus,6.7
+R-1131,purple,suitcase,soft,American Tourister,19.3
+R-1132,navy,duffel,,Adidas,9.0
+R-1133,olive,backpack,,Osprey,9.3
+R-1134,navy,backpack,,Fjallraven,9.0
+R-1135,navy,backpack,,The North Face,11.4
+R-1136,charcoal,duffel,,,17.7
+R-1137,grey,suitcase,soft,Antler,11.3
+R-1138,beige,suitcase,hard,Away,17.0
+R-1139,pink,duffel,,Adidas,17.8
+R-1140,green,duffel,,Longchamp,12.1
+R-1141,pink,suitcase,soft,American Tourister,21.5
+R-1142,charcoal,backpack,,Berghaus,8.3
+R-1143,maroon,duffel,,Adidas,16.4
+R-1144,yellow,suitcase,hard,Antler,10.6
+R-1145,yellow,duffel,,Longchamp,15.5
+R-1146,charcoal,suitcase,hard,,23.5
+R-1147,beige,suitcase,hard,Briggs & Riley,10.2
+R-1148,green,duffel,,,15.4
+R-1149,yellow,duffel,,Adidas,16.2
+R-1061,purple,backpack,,Berghaus,11.0
+R-1151,orange,duffel,,Longchamp,7.1
+R-1152,red,suitcase,,Longchamp,9.6
+R-1153,white,backpack,,The North Face,6.0
+R-1154,grey,duffel,,Nike,13.3
+R-1155,brown,duffel,,Longchamp,7.7
+R-1156,beige,backpack,,Osprey,11.2
+R-1157,maroon,backpack,,Berghaus,11.6
+R-1158,teal,backpack,,Berghaus,10.8
+R-1159,charcoal,backpack,,,7.1
+R-1160,orange,backpack,,,10.6
+R-1161,navy,suitcase,soft,American Tourister,20.9
+R-1162,brown,backpack,,Fjallraven,9.4
+R-1163,green,duffel,,Longchamp,13.8
+R-1164,navy,backpack,,The North Face,4.7
+R-1165,teal,duffel,,Nike,15.4
+R-1166,olive,backpack,,Fjallraven,10.6
+R-1167,orange,backpack,,Fjallraven,10.4
+R-1168,green,suitcase,hard,Antler,23.5
+R-1169,blue,backpack,,Osprey,6.1
+R-1170,pink,backpack,,Fjallraven,4.9
+R-1171,maroon,suitcase,soft,Rimowa,19.1
+R-1172,orange,backpack,,Osprey,5.1
+R-1173,charcoal,backpack,,,5.9
+R-1174,beige,backpack,,Berghaus,8.7
+R-1175,red,backpack,,Berghaus,11.5
+R-1176,white,duffel,,Adidas,17.4
+R-1177,white,suitcase,soft,,13.9
+R-1178,blue,backpack,,Osprey,4.4
+R-1179,silver,suitcase,hard,Rimowa,18.2
+R-1180,purple,suitcase,hard,Samsonite,13.9
+,maroon,suitcase,soft,Tumi,19.3
+R-1182,brown,backpack,,Osprey,5.4
+R-1183,teal,duffel,,Longchamp,6.8
+R-1184,olive,backpack,,Berghaus,8.0
+R-1185,olive,suitcase,soft,Samsonite,10.9
+R-1186,teal,backpack,,Berghaus,9.7
+R-1187,purple,suitcase,hard,,13.9
+R-1188,purple,duffel,,Longchamp,12.4
+R-1189,teal,duffel,,,14.4
+R-1190,maroon,duffel,,Nike,11.2
+R-1191,purple,backpack,,Berghaus,7.3
+R-1192,purple,backpack,,Fjallraven,11.6
+R-1193,blue,backpack,,,4.7
+R-1194,white,duffel,,Longchamp,6.7
+R-1195,purple,duffel,,Adidas,10.2
+R-1196,navy,backpack,,Fjallraven,6.8
+R-1197,green,suitcase,soft,Tumi,14.9
+R-1198,pink,suitcase,hard,Samsonite,18.5
+R-1199,pink,duffel,,,9.3
+R-1200,white,backpack,,,11.0
+R-1201,BLUE ,backpack,,,9.1
+R-1202,silver,duffel,,Adidas,10.1
+R-1203,purple,duffel,,Longchamp,13.2
+R-1204,grey,suitcase,hard,American Tourister,16.2
+R-1205,beige,duffel,,Nike,15.1
+R-1206,red,backpack,,Berghaus,8.2
+R-1207,yellow,suitcase,hard,,14.2
+R-1208,pink,suitcase,soft,Samsonite,17.0
+R-1209,yellow,suitcase,hard,Delsey,11.0
+R-1210,teal,suitcase,hard,Tumi,22.1
+R-1211,yellow,duffel,,Adidas,9.5
+R-1212,grey,backpack,,Berghaus,10.7
+R-1213,teal,suitcase,hard,Antler,17.3
+R-1214,purple,backpack,,The North Face,4.6
+R-1215,olive,duffel,,Adidas,10.2
+R-1216,green,duffel,,Nike,9.1
+R-1217,blue,suitcase,hard,Briggs & Riley,16.5
+R-1218,beige,duffel,,Longchamp,13.7
+R-1219,purple,backpack,,Osprey,7.8
+R-1220,navy,backpack,,Osprey,6.5
+R-1221,white,suitcase,soft,,22.1
+R-1222,olive,duffel,,Longchamp,12.7
+R-1223,beige,suitcase,hard,Briggs & Riley,17.0
+R-1224,red,backpack,,Fjallraven,11.9
+R-1225,grey,duffel,,,14.5
+R-1226,olive,duffel,,Adidas,10.5
+R-1227,purple,backpack,,Osprey,10.3
+R-1228,purple,suitcase,hard,Antler,14.0
+R-1229,green,duffel,,Longchamp,14.0
+R-1230,yellow,backpack,,,9.7
+R-1231,yellow,duffel,,Adidas,15.8
+R-1232,olive,duffel,,,14.0
+R-1233,white,suitcase,soft,Rimowa,14.8
+R-1234,brown,suitcase,hard,American Tourister,21.8
+R-1235,olive,duffel,,,10.0
+R-1236,yellow,suitcase,HARD,Away,20.1
+R-1237,brown,duffel,,Longchamp,9.4
+R-1238,brown,backpack,,Fjallraven,11.7
+R-1239,white,suitcase,soft,American Tourister,20.9
+R-1240,grey,backpack,,The North Face,11.0
+R-1241,white,backpack,,Osprey,9.7
+R-1242,orange,suitcase,hard,American Tourister,16.3
+R-1243,blue,backpack,,The North Face,10.5
+R-1244,teal,suitcase,hard,Delsey,13.3
+R-1245,brown,backpack,,,11.4
+R-1246,purple,duffel,,Nike,6.5
+R-1005,green,backpack,,Berghaus,7.6
+R-1248,silver,backpack,,Berghaus,4.9
+R-1249,red,backpack,,,7.4
+R-1250,blue,backpack,,,11.2
+R-1251,olive,suitcase,hard,American Tourister,16.0
+R-1252,teal,suitcase,hard,Tumi,17.3
+R-1253,maroon,duffel,,Longchamp,12.6
+R-1089,navy,backpack,,Fjallraven,6.0
+R-1255,red,suitcase,soft,,14.9
+R-1256,grey,duffel,,Longchamp,11.6
+R-1257,grey,duffel,,Nike,14.6
+R-1258,orange,SUITCASE ,hard,,12.8
+R-1259,charcoal,duffel,,Longchamp,8.3
+R-1260,purple,suitcase,soft,,15.2
+R-1261,beige,duffel,,Adidas,10.1
+R-1262,charcoal,duffel,,Longchamp,9.2
+R-1263,blue,backpack,,The North Face,8.4
+R-1264,purple,suitcase,soft,Antler,12.3
+R-1265,navy,backpack,,Fjallraven,8.9
+R-1266,navy,duffel,,,13.7
+R-1267,grey,duffel,,Nike,16.2
+R-1268,navy,backpack,,,5.9
+R-1269,yellow,backpack,,Osprey,8.8
+R-1270,white,backpack,,Osprey,8.6
+R-,purple,backpack,,The North Face,11.7
+R-1272,yellow,duffel,,Nike,9.1
+R-1273,silver,backpack,,Fjallraven,9.6
+R-1274,red,suitcase,hard,Briggs & Riley,12.4
+R-1275,purple,suitcase,soft,American Tourister,22.5
+R-1276,grey,duffel,,Longchamp,8.7
+R-1277,brown,suitcase,soft,,17.8
+R-1278,green,duffel,,Nike,6.8
+R-1279,charcoal,duffel,,Adidas,15.9
+R-1280,blue,backpack,,Fjallraven,5.0
+R-1281,grey,duffel,,Nike,11.2
+R-1282,red,suitcase,hard,Away,14.5
+R-1283,olive,backpack,,Osprey,6.0
+R-1284,pink,duffel,,,9.6
+R-1285,grey,duffel,,Longchamp,7.9
+R-1286,purple,duffel,,Longchamp,6.5
+R-1287,navy,suitcase,soft,Antler,12kg
+R-1288,orange,duffel,,Longchamp,10.9
+R-1289,navy,duffel,,Adidas,11.8
+R-1290,green,duffel,,Longchamp,9.8
+R-1291,yellow,backpack,,,7.0
+R-1292,brown,backpack,,Fjallraven,7.6
+R-1293,orange,suitcase,soft,Antler,13.5
+R-1294,purple,suitcase,soft,Away,17.0
+R-1295,orange,backpack,,Osprey,11.6
+R-1296,silver,suitcase,soft,,13.9
+R-1297,charcoal,duffel,,Nike,16.2
+R-1298,white,backpack,,Fjallraven,4.4
+R-1299,silver,duffel,,Adidas,6.9
+R-1300,pink,duffel,,Longchamp,14.2
+R-1301,yellow,suitcase,soft,Delsey,17.8
+R-1302,silver,suitcase,soft,Samsonite,10.5
+R-1303,olive,backpack,,The North Face,6.6
+R-1304,yellow,suitcase,soft,Briggs & Riley,19.9
+R-1305,white,suitcase,soft,Antler,18.2
+R-1306,black,duffel,,Adidas,17.6
+R-1307,brown,duffel,,Longchamp,11.8
+R-1308,YELLOW ,duffel,,,14.2
+R-1309,silver,suitcase,hard,Antler,12.1
+R-1310,olive,backpack,,Berghaus,11.0
+R-1311,green,suitcase,hard,Briggs & Riley,17.4
+R-1312,beige,suitcase,soft,American Tourister,18.5
+R-1313,pink,suitcase,soft,American Tourister,20.8
+R-1314,charcoal,duffel,,Adidas,12.7
+R-1315,pink,duffel,,Longchamp,14.1
+R-1316,white,backpack,,The North Face,6.3
+R-1317,blue,duffel,,Adidas,13.9
+R-1318,silver,suitcase,soft,American Tourister,11.9
+R-1319,brown,duffel,,Longchamp,16.9
+R-1320,navy,suitcase,hard,Briggs & Riley,11.4
+R-1321,maroon,suitcase,hard,Briggs & Riley,16.7
+R-1322,purple,backpack,,Osprey,11.3
+R-,brown,duffel,,Longchamp,16.2
+R-1324,navy,suitcase,soft,Away,23.1
+R-1325,navy,backpack,,,8.5
+R-1326,orange,backpack,,Berghaus,11.1
+R-1327,beige,duffel,,Nike,10.0
+R-1328,pink,duffel,,Nike,14.8
+R-1329,silver,duffel,,Longchamp,16.8
+R-1330,purple,duffel,,,14.0
+R-1331,charcoal,suitcase,soft,Samsonite,13.7
+R-1332,purple,backpack,,Osprey,6.1
+R-1333,navy,suitcase,hard,Away,15.7
+R-1334,orange,duffel,,Longchamp,17.0
+R-1335,brown,duffel,,Nike,11.7
+R-1336,white,duffel,,Longchamp,17.0
+R-1337,silver,duffel,,Longchamp,15.1
+R-1338,olive,suitcase,soft,Delsey,11.1
+R-1339,maroon,suitcase,hard,Away,12.3
+R-1340,red,backpack,,Berghaus,4.7
+R-1341,beige,suitcase,hard,Briggs & Riley,17.9
+R-1342,,duffel,,Adidas,9.1
+R-1343,blue,duffel,,,10.1
+R-1344,blue,suitcase,soft,,15.7
+R-1345,teal,duffel,,Adidas,11.4
+R-1346,yellow,backpack,,,11.7
+R-1347,white,suitcase,hard,Antler,17.4
+R-1348,black,suitcase,hard,Briggs & Riley,19.4
+R-1349,yellow,duffel,,Nike,11.5
+R-1350,red,suitcase,hard,Antler,18.6
+R-1351,brown,suitcase,hard,,18.3
+R-1352,navy,duffel,,Nike,10.8
+R-1353,navy,suitcase,hard,American Tourister,13.3
+R-1354,purple,duffel,,Longchamp,15.8
+R-1355,olive,suitcase,hard,American Tourister,10.9
+R-1356,grey,suitcase,HARD,Adidas,12.7
+R-1357,yellow,duffel,,Adidas,14.4
+R-1358,yellow,backpack,,Berghaus,5.9
+R-1359,green,duffel,,Nike,12.7
+R-1360,olive,duffel,,,8.9
+R-1361,blue,duffel,,Adidas,7.1
+R-1362,navy,suitcase,soft,Samsonite,22.2
+R-1363,maroon,duffel,,Nike,16.4
+R-1364,silver,suitcase,hard,Tumi,20.5
+R-1365,silver,suitcase,soft,Delsey,20.9
+R-1366,white,duffel,,Adidas,12.2
+R-1367,,suitcase,soft,Delsey,14.4
+R-1368,green,duffel,,,12.6
+R-1369,teal,duffel,,Nike,10.0
+R-1370,charcoal,suitcase,soft,Briggs & Riley,23.5
+R-1371,beige,backpack,,Fjallraven,5.4
+R-1372,grey,backpack,,Osprey,8.2
+R-1373,navy,suitcase,hard,Rimowa,11.0
+R-1374,olive,suitcase,soft,Briggs & Riley,-18
+R-1375,black,backpack,,,9.8
+R-1376,black,backpack,,Berghaus,10.4
+R-1377,red,suitcase,hard,American Tourister,21.4
+R-1378,blue,backpack,,Berghaus,7.7
+R-1379,brown,duffel,,Nike,13.8
+1099,blue,suitcase,soft,Briggs & Riley,10.8
+R-1381,teal,backpack,,Fjallraven,8.5
+R-1382,olive,suitcase,hard,Briggs & Riley,13.8
+R-1383,pink,duffel,,Longchamp,13.9
+R-1384,black,backpack,,The North Face,10.0
+R-1385,blue,backpack,,The North Face,8.5
+R-1386,maroon,duffel,,Longchamp,7.7
+R-1387,blue,duffel,,Adidas,6.6
+R-1388,purple,suitcase,soft,Delsey,10.4
+R-1389,charcoal,backpack,,Berghaus,7.5
+R-1390,yellow,duffel,,,13.4
+R-1391,blue,duffel,,,7.9
+R-1392,green,duffel,,Adidas,10.3
+R-1393,beige,backpack,,Fjallraven,4.8
+R-1394,beige,backpack,,Berghaus,4.8
+R-1395,blue,backpack,hard,Adidas,16.4
+R-1396,blue,backpack,,The North Face,8.6
+R-1397,grey,backpack,,,6.4
+R-1398,grey,suitcase,soft,American Tourister,16.8
+R-1399,brown,backpack,,Berghaus,8.8
+R-1400,green,suitcase,soft,,15.5
+R-1401,purple,backpack,,Berghaus,10.5
+R-1402,green,duffel,,Longchamp,17.4
+R-1403,grey,backpack,,Fjallraven,6.3
+R-1404,brown,backpack,,Fjallraven,10.5
+R-1405,silver,suitcase,hard,Samsonite,23.3
+R-1406,silver,duffel,,Adidas,16.0
+R-1407,charcoal,backpack,,,6.4
+R-1408,teal,suitcase,soft,,23.9
+R-1409,maroon,backpack,,Berghaus,8.3
+R-1410,maroon,backpack,,Osprey,4.9
+R-1411,white,duffel,,Longchamp,6.5
+R-1412,yellow,duffel,,Adidas,17.6
+R-1413,red,suitcase,soft,Rimowa,16.2
+R-1414,olive,duffel,,Nike,11.8
+R-1415,red,suitcase,hard,Delsey,16.4
+R-1416,white,backpack,,Berghaus,9.8
+R-1417,orange,suitcase,hard,Tumi,10.3
+R-1418,grey,suitcase,hard,Away,14.6
+R-1419,brown,backpack,,The North Face,5.5
+R-1420,black,backpack,,The North Face,7.6
+R-1421,silver,suitcase,hard,Tumi,18.1
+R-1422,grey,duffel,,Nike,11.5
+R-1423,olive,backpack,,Fjallraven,8.8
+R-1424,red,duffel,,Adidas,13.4
+R-1425,orange,duffel,,Longchamp,7.0
+R-1426,brown,suitcase,soft,,15.2
+R-1427,teal,backpack,,Berghaus,7.4
+R-1428,grey,duffel,,Adidas,9.5
+R-1429,navy,backpack,,Osprey,7.9
+R-1430,maroon,backpack,,Berghaus,7.3
+R-1431,beige,duffel,,Nike,12.8
+R-1432,orange,suitcase,hard,American Tourister,12.4
+R-1433,charcoal,duffel,,Nike,12.9
+R-1434,white,duffel,,Nike,15.1
+R-1435,teal,suitcase,hard,Rimowa,14.2
+R-1436,pink,backpack,,Osprey,7.5
+R-1437,silver,suitcase,soft,Antler,12.3
+R-1438,silver,suitcase,hard,American Tourister,18.4
+R-1439,orange,duffel,,Adidas,17.4
+R-1440,red,duffel,,,15.0
+R-1441,pink,suitcase,hard,Away,13.5
+R-1442,yellow,suitcase,soft,,18.9
+R-1443,beige,backpack,,,10.4
+R-1444,olive,backpack,,Fjallraven,7.6
+R-1445,black,duffel,,Longchamp,7.1
+R-1446,white,duffel,,Longchamp,10.8
+R-1447,charcoal,suitcase,soft,American Tourister,14.7
+R-1448,charcoal,duffel,,Longchamp,abc
+R-1449,red,suitcase,hard,Samsonite,23.9
+R-1450,green,duffel,,Adidas,7.9
+R-1451,blue,backpack,,Fjallraven,4.7
+R-1452,grey,duffel,,,13.5
+R-1453,teal,suitcase,hard,Samsonite,13.0
+R-1454,brown,duffel,,Adidas,6.1
+R-1455,teal,suitcase,hard,Rimowa,15.4
+R-1456,red,suitcase,soft,American Tourister,11.9
+R-1457,green,suitcase,hard,Samsonite,18.5
+R-1458,silver,backpack,,The North Face,11.4
+R-1459,silver,backpack,,,4.8
+R-1460,yellow,duffel,,Adidas,9.8
+R-1461,blue,backpack,,Fjallraven,10.2
+R-1462,orange,duffel,,Longchamp,12.1
+R-1463,navy,backpack,,The North Face,8.0
+R-1464,blue,backpack,,Osprey,11.9
+R-1465,yellow,suitcase,soft,Away,20.7
+R-1466,black,suitcase,hard,,13.0
+R-1467,olive,backpack,,Berghaus,7.4
+R-1468,maroon,duffel,,Nike,9.3
+R-1469,silver,duffel,,Nike,12.4
+R-1470,blue,duffel,,Adidas,14.8
+R-1471,brown,suitcase,hard,Tumi,16.3
+R-1472,grey,backpack,,,9.7
+R-1473,charcoal,suitcase,soft,American Tourister,12.3
+R-1474,red,backpack,,Osprey,6.7
+R-1475,blue,duffel,,Longchamp,13.5
+R-1476,white,duffel,,,16.3
+R-1477,pink,suitcase,hard,Tumi,13.2
+R-1478,black,suitcase,hard,,15.1
+R-1479,navy,suitcase,soft,Rimowa,15.8
+R-1480,blue,backpack,,Osprey,8.0
+R-1481,brown,suitcase,hard,Tumi,22.3
+R-1482,purple,backpack,,,7.7
+R-1483,orange,backpack,,The North Face,7.7
+R-1484,silver,backpack,,The North Face,5.2
+R-1485,brown,suitcase,soft,Samsonite,abc
+R-1486,orange,duffel,,,12.4
+R-1487,navy,backpack,,The North Face,9.7
+R-1488,olive,suitcase,soft,Delsey,16.4
+R-1489,red,duffel,,Longchamp,15.8
+R-1490,navy,duffel,,Nike,8.8
+R-1491,yellow,backpack,,Fjallraven,6.5
+R-1492,silver,suitcase,hard,Tumi,12.2
+R-1493,purple,backpack,,Fjallraven,11.7
+R-1494,beige,backpack,,Osprey,4.7
+R-1495,navy,backpack,,Fjallraven,5.2
+R-1496,yellow,backpack,,Fjallraven,6.1
+R-1497,yellow,suitcase,soft,Rimowa,11.3
+R-1498,red,suitcase,hard,,20.9
+R-1499,yellow,suitcase,soft,Tumi,18.2
+R-1500,black,suitcase,hard,Briggs & Riley,21.3
+R-1501,red,backpack,,,7.7
+R-1502,teal,duffel,,Adidas,12.0
+R-1503,grey,backpack,,The North Face,6.2
+R-1504,navy,suitcase,hard,Briggs & Riley,15.8
+R-1505,blue,suitcase,soft,Antler,12.8
+R-1506,brown,duffel,,Longchamp,15.5
+R-1507,white,duffel,,Adidas,10.1
+R-1508,yellow,backpack,,Osprey,6.6
+R-1509,navy,backpack,,Berghaus,8.2
+R-1510,grey,suitcase,hard,Rimowa,13.7
+R-1511,navy,duffel,,Nike,12.9
+R-1512,white,backpack,,The North Face,5.4
+R-1513,white,duffel,,Nike,14.4
+R-1514,green,duffel,,Nike,16.0
+R-1515,maroon,backpack,,Berghaus,4.3
+R-1516,brown,duffel,,,11.7
+R-1517,silver,duffel,,Adidas,14.6
+R-1518,navy,backpack,,,8.7
+R-1519,olive,suitcase,soft,Delsey,19.9
+R-1520,red,duffel,,Adidas,7.6
+R-1521,charcoal,backpack,,The North Face,9.7
+R-1522,white,duffel,,Longchamp,15.8
+R-1523,orange,duffel,,,14.7
+R-1524,yellow,duffel,,Longchamp,6.4
+R-1525,brown,duffel,,Nike,17.2
+R-1526,blue,duffel,,Adidas,8.0
+R-1527,purple,suitcase,soft,,12.9
+R-1528,pink,backpack,,Osprey,4.4
+R-1529,grey,backpack,,Berghaus,11.1
+R-1530,red,backpack,,The North Face,5.3
+R-1531,orange,suitcase,hard,Tumi,11.0
+R-1532,grey,backpack,,Osprey,6.7
+R-1533,black,backpack,,The North Face,8.9
+R-1534,red,suitcase,soft,Rimowa,15.7
+R-1535,maroon,duffel,,Adidas,9.6
+R-1302,maroon,backpack,,The North Face,4.4
+R-1537,charcoal,duffel,,Nike,8.5
+R-1538,charcoal,suitcase,hard,Antler,16.6
+R-1539,blue,backpack,,Berghaus,5.5
+R-1540,grey,backpack,,Fjallraven,7.5
+R-1541,navy,backpack,,Osprey,4.7
+R-1542,teal,duffel,,Longchamp,8.7
+R-1543,olive,backpack,,Berghaus,8.6
+R-1544,blue,backpack,,Osprey,8.0
+R-1545,green,duffel,,,15.1
+R-1546,silver,suitcase,hard,,15.9
+R-1547,silver,backpack,,The North Face,10.7
+R-1548,blue,duffel,,,12.7
+R-1549,olive,backpack,,Osprey,10.3
+R-1550,teal,duffel,,,7.8
+R-1551,red,duffel,,Longchamp,15.4
+R-1552,white,duffel,,Adidas,10.6
+R-1553,charcoal,duffel,,,9.3
+R-1554,yellow,duffel,,,16.7
+R-1555,navy,suitcase,soft,Delsey,10.3
+R-1556,orange,backpack,,Berghaus,10.9
+R-1557,green,suitcase,soft,Briggs & Riley,20.8
+R-1558,teal,duffel,,Nike,8.3
+R-1559,charcoal,backpack,,Fjallraven,10.6
+R-1560,blue,suitcase,soft,Antler,11.9
+R-1561,black,duffel,,Nike,16.0
+R-1562,navy,backpack,,The North Face,6.2
+R-1563,yellow,duffel,,Nike,14.2
+R-1564,beige,backpack,,Berghaus,8.7
+R-1565,pink,suitcase,hard,Antler,10.7
+R-1566,brown,suitcase,hard,American Tourister,19.1
+R-1567,black,duffel,,Nike,13.8
+R-1568,brown,suitcase,soft,American Tourister,20.0
+R-1569,teal,backpack,,Fjallraven,7.7
+R-1570,olive,backpack,,Berghaus,12kg
+R-1571,orange,duffel,,Nike,11.8
+R-1572,purple,backpack,,Fjallraven,9.2
+R-1573,orange,duffel,,Longchamp,15.2
+R-1574,yellow,duffel,,Longchamp,
+R-1575,PINK ,backpack,,Berghaus,7.1
+R-1576,silver,duffel,,Longchamp,8.7
+R-1577,white,backpack,,The North Face,10.7
+R-1578,orange,suitcase,hard,American Tourister,20.2
+R-1579,purple,suitcase,hard,Rimowa,20.4
+R-1580,white,backpack,,Fjallraven,7.7
+R-1581,blue,suitcase,soft,Tumi,22.1
+R-1582,teal,backpack,,,10.8
+R-1583,purple,suitcase,soft,Briggs & Riley,12.0
+R-1584,blue,suitcase,soft,Away,14.4
+R-1585,pink,backpack,,The North Face,8.6
+R-1586,green,suitcase,soft,Antler,16.0
+R-1587,navy,suitcase,hard,Samsonite,22.5
+R-1588,silver,duffel,,,6.0
+R-1589,white,suitcase,soft,,15.4
+R-1590,blue,suitcase,hard,American Tourister,16.4
+R-1591,purple,duffel,,Longchamp,17.9
+R-1592,white,backpack,,The North Face,11.6
+R-1593,black,backpack,,The North Face,-6
+R-1594,white,suitcase,hard,American Tourister,20.8
+R-1427,navy,duffel,,Longchamp,16.0
+R-1596,yellow,backpack,,,6.0
+R-1597,black,suitcase,soft,Tumi,19.3
+R-1598,green,duffel,,Nike,12.1
+R-1599,red,backpack,,Berghaus,5.6
+R-1600,olive,backpack,,Fjallraven,9.6
+R-1601,maroon,suitcase,soft,Briggs & Riley,heavy
+R-1602,charcoal,suitcase,hard,Tumi,20.1
+R-1603,brown,backpack,,Fjallraven,6.1
+R-1604,navy,suitcase,soft,Delsey,16.0
+R-1605,black,suitcase,hard,Away,14.6
+R-1606,pink,duffel,,Nike,10.5
+R-1607,yellow,suitcase,soft,American Tourister,21.7
+R-1608,teal,backpack,,The North Face,4.9
+R-1609,grey,suitcase,hard,Briggs & Riley,21.2
+R-1610,yellow,suitcase,soft,Away,16.8
+R-1611,beige,backpack,,,6.1
+R-1612,olive,duffel,,Longchamp,14.7
+R-1613,purple,duffel,,Longchamp,14.4
+R-1614,brown,duffel,,Longchamp,14.1
+R-1615,navy,duffel,,,17.2
+R-1616,charcoal,backpack,,Osprey,10.0
+R-1617,pink,backpack,,,5.8
+R-1618,brown,backpack,,,7.6
+R-1619,charcoal,backpack,hard,Briggs & Riley,20.4
+R-1620,navy,backpack,,Osprey,10.6
+R-1621,orange,duffel,,Longchamp,8.5
+R-1622,white,backpack,,The North Face,10.8
+R-1623,charcoal,duffel,,Adidas,14.6
+R-1624,brown,duffel,,,10.3
+R-1625,maroon,backpack,,Osprey,4.4
+R-1626,teal,suitcase,hard,Rimowa,12.6
+R-1627,silver,backpack,,The North Face,9.7
+R-1628,navy,backpack,,Osprey,10.2
+R-1629,olive,duffel,,,12.0
+R-1630,maroon,suitcase,soft,Briggs & Riley,22.9
+R-1631,grey,suitcase,hard,,19.2
+R-1632,olive,backpack,,Berghaus,11.8
+R-1633,pink,suitcase,soft,American Tourister,16.3
+R-1634,olive,backpack,,Fjallraven,9.7
+R-1635,silver,duffel,,Longchamp,14.6
+R-1636,green,duffel,,Longchamp,17.7
+R-1637,purple,duffel,,Adidas,12.7
+R-1638,teal,duffel,,Longchamp,9.4
+R-1639,olive,suitcase,hard,,12.0
+R-1640,pink,suitcase,hard,American Tourister,12.0
+R-1641,silver,backpack,,Osprey,6.9
+R-1642,maroon,duffel,,Longchamp,13.8
+R-1643,orange,duffel,,Nike,17.1
+R-1644,purple,duffel,,Nike,6.2
+R-1645,beige,duffel,,Longchamp,14.5
+R-1646,maroon,duffel,,Nike,15.3
+R-1647,beige,backpack,,Osprey,5.5
+R-1648,red,duffel,,Adidas,9.3
+R-1649,pink,suitcase,hard,Away,10.6
+R-1650,navy,duffel,,Longchamp,13.4
+R-1651,maroon,backpack,,Fjallraven,8.2
+R-1652,blue,duffel,,Nike,11.0
+R-1653,white,suitcase,hard,Delsey,14.6
+R-1654,olive,duffel,,Longchamp,15.9
+R-1655,red,suitcase,soft,Rimowa,23.4
+R-1656,yellow,backpack,,Osprey,7.1
+R-1657,black,backpack,,Fjallraven,8.1
+R-1658,navy,backpack,,The North Face,6.6
+R-1659,grey,suitcase,hard,Rimowa,19.4
+R-1660,teal,duffel,,Nike,12.5
+R-1661,teal,duffel,,Nike,15.0
+R-1662,purple,backpack,,,4.6
+R-1663,maroon,backpack,,,10.6
+R-1664,yellow,backpack,,Berghaus,heavy
+R-1665,black,duffel,,Longchamp,6.8
+R-1666,blue,suitcase,soft,Tumi,14.1
+R-1667,blue,duffel,,Adidas,10.6
+R-1668,charcoal,suitcase,hard,Away,20.5
+R-1669,orange,duffel,,Nike,9.6
+R-1670,white,duffel,,Nike,12.6
+R-1671,navy,suitcase,hard,Antler,17.5
+R-1672,silver,backpack,,Fjallraven,5.7
+R-1673,green,duffel,,Nike,13.4
+R-1674,grey,suitcase,hard,Briggs & Riley,19.0
+R-1675,blue,duffel,,Nike,14.7
+R-1676,white,backpack,,,9.2
+R-1677,blue,duffel,,Adidas,11.8
+R-1678,orange,duffel,,Nike,12.8
+R-1679,teal,backpack,,Fjallraven,6.0
+R-1680,teal,duffel,,Adidas,7.6
+R-1681,beige,backpack,,Fjallraven,7.9
+R-1682,blue,duffel,,Nike,16.7
+R-1683,blue,duffel,,Nike,16.2
+R-1684,yellow,duffel,,Nike,16.9
+R-1685,maroon,duffel,,Nike,10.4
+R-1686,orange,duffel,,,12.0
+R-1687,olive,backpack,,,5.9
+R-1688,grey,duffel,,Nike,11.4
+R-1689,green,duffel,,Adidas,
+R-1690,blue,suitcase,soft,Samsonite,19.4
+R-1691,yellow,backpack,,Berghaus,12kg
+R-1692,olive,suitcase,soft,American Tourister,18.1
+R-1693,yellow,backpack,,Osprey,8.1
+R-1694,olive,suitcase,soft,Delsey,16.8
+R-1695,black,duffel,,Nike,11.3
+R-1696,pink,duffel,,Nike,7.9
+R-1697,brown,suitcase,soft,Tumi,16.7
+R-1698,grey,suitcase,soft,,10.6
+R-1699,green,suitcase,hard,Away,10.8
+R-1700,olive,suitcase,soft,Samsonite,22.3
+R-1701,blue,backpack,,Berghaus,10.9
+R-1702,green,backpack,,The North Face,9.0
+R-1703,purple,suitcase,soft,Tumi,13.2
+R-1704,black,suitcase,hard,Antler,21.6
+R-1705,charcoal,suitcase,hard,Tumi,11.3
+R-1706,maroon,duffel,,Longchamp,13.8
+R-1707,navy,backpack,,Berghaus,5.8
+R-1708,white,backpack,,Osprey,7.4
+R-1709,BLUE ,suitcase,soft,Antler,13.6
+R-1710,olive,suitcase,hard,Antler,19.2
+R-1711,teal,backpack,,The North Face,7.4
+R-1712,maroon,backpack,,Fjallraven,8.9
+R-1713,silver,backpack,,Berghaus,5.4
+R-1714,pink,backpack,,Fjallraven,10.2
+R-1715,red,suitcase,hard,Away,11.4
+R-1716,maroon,backpack,,Osprey,5.3
+R-1717,blue,suitcase,hard,Antler,11.2
+R-1718,blue,backpack,,Berghaus,11.4
+R-1719,olive,duffel,,Longchamp,6.7
+R-1720,charcoal,suitcase,soft,,21.9
+R-1721,orange,duffel,,Longchamp,12.1
+1099,grey,duffel,,Adidas,8.9
+R-1723,yellow,backpack,,Berghaus,7.2
+R-1724,blue,suitcase,hard,Delsey,14.9
+R-1725,silver,suitcase,soft,Samsonite,13.7
+R-1726,maroon,suitcase,hard,Delsey,23.3
+R-1727,maroon,backpack,,Fjallraven,9.6
+R-1728,charcoal,duffel,,Adidas,17.5
+R-1729,black,backpack,,Fjallraven,4.5
+R-1730,brown,box,soft,Delsey,17.2
+R-1731,blue,backpack,,Fjallraven,4.6
+R-1732,purple,backpack,,Fjallraven,5.5
+R-1733,charcoal,suitcase,hard,Rimowa,22.2
+R-1734,brown,suitcase,soft,Tumi,11.7
+R-1735,charcoal,duffel,,Longchamp,17.5
+R-1736,purple,backpack,,Fjallraven,7.9
+R-1737,pink,duffel,,Longchamp,7.5
+R-1738,charcoal,backpack,,Osprey,8.0
+R-1739,grey,duffel,,Nike,14.4
+R-1740,black,duffel,,,8.5
+R-1741,white,backpack,,Fjallraven,5.5
+R-1742,charcoal,backpack,,Fjallraven,6.9
+R-1743,teal,suitcase,soft,Antler,13.9
+R-1744,brown,suitcase,hard,Rimowa,17.8
+R-1745,green,suitcase,hard,Samsonite,12.5
+R-1746,olive,duffel,,Adidas,15.4
+R-1747,navy,duffel,,Longchamp,8.0
+R-1748,charcoal,backpack,,Osprey,7.6
+R-1749,white,backpack,,Fjallraven,6.8
+R-1750,silver,backpack,,The North Face,11.8
+R-1751,olive,backpack,,Berghaus,11.1
+R-1752,beige,backpack,,The North Face,10.9
+R-1753,teal,backpack,,Berghaus,10.8
+R-1754,purple,suitcase,hard,American Tourister,19.9
+R-1755,pink,backpack,,Fjallraven,10.0
+R-1756,teal,backpack,,Osprey,5.0
+R-1757,blue,backpack,,Berghaus,4.8
+R-1758,maroon,backpack,,,10.2
+R-1759,red,suitcase,soft,Tumi,19.2
+R-1760,brown,backpack,,Fjallraven,7.5
+R-1761,grey,duffel,,,14.0
+R-1762,charcoal,backpack,,Fjallraven,8.4
+R-1763,maroon,duffel,,Longchamp,11.5
+R-1764,teal,duffel,,Longchamp,12.4
+R-1765,maroon,backpack,,Osprey,7.5
+R-1766,green,backpack,,Osprey,8.2
+R-1767,white,suitcase,soft,Samsonite,19.6
+R-1768,orange,backpack,,,7.4
+R-1769,black,suitcase,soft,Antler,15.5
+R-1770,yellow,duffel,,Nike,9.2
+R-1771,olive,suitcase,soft,American Tourister,15.8
+R-1772,green,suitcase,soft,,16.4
+R-1773,charcoal,duffel,,Nike,7.8
+R-1774,grey,suitcase,hard,Away,20.0
+R-1775,blue,suitcase,hard,,13.0
+R-1776,white,backpack,,Osprey,6.6
+R-1777,navy,suitcase,soft,Tumi,17.6
+R-1778,yellow,backpack,,Osprey,11.8
+R-1779,beige,backpack,,Osprey,5.6
+R-1780,olive,suitcase,hard,American Tourister,23.1
+R-1781,navy,duffel,,Longchamp,12.3
+R-1782,orange,duffel,,Nike,16.4
+R-1783,brown,suitcase,soft,Away,21.1
+R-1784,brown,backpack,,,4.3
+R-1785,green,backpack,,Osprey,6.0
+R-1786,purple,duffel,,Longchamp,6.7
+R-1787,maroon,suitcase,hard,,13.3
+R-1788,white,backpack,hard,Adidas,14.8
+R-1789,green,backpack,,Osprey,7.9
+R-1790,maroon,backpack,,The North Face,8.5
+R-1791,beige,backpack,,The North Face,4.6
+R-1792,pink,backpack,,Berghaus,4.0
+R-1793,grey,backpack,,Fjallraven,10.2
+R-1794,blue,duffel,,Longchamp,15.8
+R-1795,charcoal,duffel,,Nike,13.4
+R-1796,purple,duffel,,,12.3
+R-1797,grey,suitcase,hard,Briggs & Riley,abc
+R-1798,,duffel,,Longchamp,13.1
+R-1799,blue,duffel,,,17.1
+R-1800,beige,suitcase,hard,Antler,21.5
+R-1801,pink,suitcase,hard,American Tourister,11.1
+R-1802,red,duffel,,,8.8
+R-1803,olive,suitcase,hard,Away,17.8
+R-1804,red,duffel,,Longchamp,10.3
+R-1805,teal,duffel,,Nike,15.5
+R-1806,purple,duffel,,Longchamp,18.0
+R-1807,purple,backpack,,Fjallraven,10.8
+R-1808,teal,duffel,,Adidas,13.3
+R-1809,yellow,suitcase,soft,Briggs & Riley,16.3
+R-1810,navy,duffel,,Longchamp,6.2
+R-1811,black,backpack,,The North Face,5.7
+R-1812,pink,duffel,,Longchamp,12.7
+R-1813,red,suitcase,hard,Away,11.9
+R-1814,brown,duffel,,Adidas,7.1
+R-1815,blue,suitcase,soft,Away,16.8
+R-1816,red,duffel,,Adidas,6.4
+R-1817,blue,backpack,,Fjallraven,6.8
+R-1818,red,backpack,,The North Face,10.0
+R-1819,yellow,suitcase,hard,Samsonite,14.5
+R-1820,olive,backpack,,The North Face,4.4
+R-1821,beige,backpack,,Osprey,5.8
+R-1822,green,backpack,,,4.7
+R-1823,maroon,suitcase,soft,Antler,17.0
+R-1824,green,suitcase,soft,Briggs & Riley,15.5
+R-1825,olive,duffel,,Nike,9.2
+R-1826,blue,duffel,,,11.0
+R-1827,purple,suitcase,soft,Samsonite,20.8
+R-1828,beige,backpack,,Berghaus,4.4
+R-1829,white,suitcase,hard,Tumi,11.6
+R-1830,green,duffel,,Adidas,6.2
+R-1831,orange,suitcase,soft,Delsey,12.9
+R-1832,maroon,suitcase,soft,Away,19.7
+R-1833,olive,backpack,,,5.4
+R-1834,pink,backpack,hard,,13.9
+R-1835,pink,duffel,,Longchamp,10.3
+R-1836,yellow,backpack,,Berghaus,8.1
+R-1837,charcoal,backpack,,Osprey,5.5
+R-1838,maroon,backpack,,Osprey,4.3
+R-1839,purple,backpack,,The North Face,4.1
+R-1840,orange,backpack,,Fjallraven,10.5
+R-1841,black,backpack,,Fjallraven,5.8
+R-1842,green,backpack,,,7.1
+R-1843,brown,duffel,,Longchamp,7.8
+R-1844,purple,duffel,,Nike,8.5
+R-1845,silver,duffel,,Adidas,14.3
+R-1846,teal,suitcase,hard,Away,14.4
+R-1847,red,duffel,,Nike,14.7
+R-1848,teal,backpack,,Fjallraven,5.2
+R-1849,grey,suitcase,hard,American Tourister,18.5
+R-1850,brown,duffel,,Nike,10.3
+R-1851,green,backpack,,Berghaus,9.7
+,charcoal,backpack,,The North Face,5.5
+R-1853,teal,backpack,,The North Face,10.1
+R-1854,charcoal,backpack,,Berghaus,11.1
+R-1855,yellow,suitcase,soft,Samsonite,17.3
+R-1856,brown,suitcase,soft,Samsonite,17.8
+R-1857,navy,duffel,,Adidas,10.8
+R-1858,beige,backpack,,Fjallraven,8.9
+R-1859,green,duffel,,Longchamp,11.4
+R-1860,grey,suitcase,hard,Delsey,16.3
+R-1861,silver,duffel,,Nike,9.0
+R-1862,grey,duffel,,Nike,7.1
+R-1863,white,duffel,,,14.5
+R-1864,grey,duffel,,Adidas,6.5
+R-1865,green,backpack,,The North Face,5.4
+R-1866,orange,backpack,,Berghaus,6.3
+R-1867,silver,suitcase,hard,American Tourister,10.2
+R-1868,maroon,backpack,,Berghaus,5.9
+R-1869,beige,backpack,,Osprey,-9
+R-1870,maroon,duffel,,Nike,6.6
+R-1871,white,duffel,,,16.2
+R-1872,orange,duffel,,Nike,6.6
+R-1873,grey,suitcase,soft,Away,23.5
+R-1874,navy,backpack,,,6.4
+R-1875,blue,backpack,,Osprey,6.3
+R-1876,pink,duffel,,Adidas,12.3
+R-1877,navy,duffel,,,14.8
+R-1878,charcoal,suitcase,soft,Delsey,13.6
+R-1879,white,duffel,,Longchamp,12.8
+R-1880,charcoal,duffel,,Nike,16.6
+R-1881,silver,backpack,,,4.2
+R-1882,silver,suitcase,soft,Delsey,14.9
+R-1883,black,suitcase,hard,American Tourister,21.1
+R-1884,maroon,duffel,,Nike,7.4
+R-1885,black,backpack,,The North Face,6.6
+R-1886,charcoal,duffel,,Nike,13.7
+R-1887,beige,duffel,,Longchamp,16.8
+R-1888,navy,backpack,,Fjallraven,8.5
+R-1889,maroon,duffel,,,12.9
+R-1890,blue,backpack,,Fjallraven,10.7
+R-1891,maroon,backpack,,Berghaus,5.5
+R-1892,purple,backpack,,Fjallraven,7.3
+R-1893,white,suitcase,soft,American Tourister,13.0
+R-1894,white,suitcase,hard,Tumi,
+R-1895,green,duffel,,Adidas,14.8
+R-1896,green,backpack,,Osprey,10.6
+R-1897,green,duffel,,Nike,11.5
+R-1898,red,duffel,,,17.2
+R-1899,blue,duffel,,Nike,7.2
+R-1900,orange,duffel,,,15.1
+R-1901,purple,suitcase,hard,American Tourister,17.5
+R-1902,red,duffel,,Nike,400
+R-1903,maroon,suitcase,soft,American Tourister,12.0
+R-1904,brown,backpack,,Fjallraven,8.9
+R-1905,navy,backpack,,,7.8
+R-1906,yellow,suitcase,hard,,15.5
+R-1907,beige,duffel,,Adidas,10.0
+R-1908,maroon,duffel,,,17.1
+R-1909,green,duffel,,,15.6
+R-1910,beige,suitcase,soft,Briggs & Riley,16.6
+R-1911,pink,suitcase,soft,Delsey,21.0
+R-1912,charcoal,backpack,,,7.8
+R-1913,grey,backpack,,Fjallraven,8.8
+R-1914,yellow,suitcase,hard,Tumi,21.1
+R-1915,teal,backpack,,The North Face,8.4
+R-1916,blue,backpack,,Berghaus,10.3
+R-1917,maroon,backpack,,The North Face,9.3
+R-1918,charcoal,duffel,,,13.2
+R-1919,beige,suitcase,hard,Antler,11.0
+R-1920,yellow,duffel,,Longchamp,13.9
+R-1921,black,suitcase,hard,Briggs & Riley,17.4
+R-1922,beige,duffel,,Longchamp,16.5
+R-1923,orange,duffel,,Adidas,14.6
+R-1924,black,suitcase,soft,American Tourister,10.9
+R-1925,black,backpack,hard,,14.0
+R-1926,yellow,duffel,,Longchamp,10.6
+R-1927,silver,duffel,,Adidas,7.7
+R-1928,teal,backpack,,The North Face,5.1
+R-1929,green,suitcase,soft,Away,11.2
+R-1930,beige,backpack,,Berghaus,9.0
+R-1931,maroon,backpack,,Berghaus,6.8
+R-1932,black,duffel,,Longchamp,8.8
+R-1933,maroon,backpack,,Osprey,11.8
+R-1934,white,duffel,,,11.8
+R-1935,olive,suitcase,soft,Tumi,17.3
+R-1936,charcoal,suitcase,hard,American Tourister,18.6
+R-1937,black,duffel,,Longchamp,16.9
+R-1938,teal,backpack,,Fjallraven,150
+R-1939,pink,duffel,,,11.7
+R-1940,orange,suitcase,hard,Tumi,11.8
+R-1941,pink,backpack,,,6.2
+R-1942,red,suitcase,hard,Away,19.2
+R-1943,pink,suitcase,hard,Samsonite,14.8
+R-1944,green,suitcase,soft,Antler,20.8
+R-1945,grey,backpack,,Fjallraven,4.4
+R-1946,navy,suitcase,hard,Briggs & Riley,14.2
+R-1947,brown,duffel,,Longchamp,10.7
+R-1948,teal,duffel,,,17.1
+R-1949,purple,duffel,,Longchamp,17.5
+R-1950,white,duffel,,Adidas,13.3
+R-1951,purple,backpack,,Osprey,6.0
+R-1952,brown,backpack,,The North Face,8.2
+R-1953,purple,suitcase,hard,Tumi,10.2
+R-1954,beige,suitcase,soft,American Tourister,400
+R-1955,silver,suitcase,hard,Tumi,11.2
+R-1956,grey,backpack,,The North Face,6.0
+R-1957,beige,suitcase,soft,Delsey,13.6
+R-1958,navy,backpack,,Fjallraven,12.0
+R-1959,grey,backpack,,Berghaus,11.8
+R-1960,grey,backpack,,Osprey,5.2
+R-1961,red,suitcase,soft,Tumi,10.5
+R-1962,pink,duffel,,Nike,16.8
+R-1963,black,duffel,,Longchamp,10.7
+R-1964,yellow,backpack,,Berghaus,7.8
+R-1965,blue,duffel,,Nike,10.6
+R-1966,red,backpack,,Fjallraven,6.7
+R-1967,blue,suitcase,soft,Delsey,11.1
+R-1968,silver,backpack,,Osprey,11.7
+R-1969,yellow,backpack,,Fjallraven,7.9
+R-1970,silver,backpack,,,5.5
+R-1971,brown,duffel,,Nike,15.5
+R-1972,maroon,suitcase,,Berghaus,11.7
+R-1973,navy,backpack,,The North Face,10.5
+R-1974,maroon,backpack,,,8.6
+R-1975,green,suitcase,soft,Briggs & Riley,22.7
+R-1976,green,suitcase,hard,Samsonite,22.7
+R-1977,beige,suitcase,hard,Tumi,21.4
+R-1978,brown,backpack,,,5.6
+R-1979,yellow,duffel,,Longchamp,12.9
+R-1980,navy,suitcase,hard,Tumi,13.8
+R-1981,white,suitcase,hard,Samsonite,11.9
+R-1982,yellow,duffel,,Nike,16.6
+R-1983,grey,suitcase,hard,American Tourister,15.8
+R-1984,green,backpack,,Fjallraven,8.2
+R-1985,navy,suitcase,hard,Tumi,18.8
+R-1986,teal,backpack,,,5.9
+R-1987,red,duffel,,Longchamp,12.1
+R-1988,silver,duffel,,Nike,7.4
+R-1989,charcoal,backpack,,Osprey,4.4
+R-1990,teal,suitcase,soft,Briggs & Riley,10.6
+R-1991,grey,duffel,,Nike,11.8
+R-1992,beige,suitcase,soft,Delsey,13.2
+R-1993,red,suitcase,hard,Rimowa,15.3
+R-1994,charcoal,backpack,,,7.5
+R-1995,beige,duffel,,Adidas,7.6
+R-1996,white,duffel,,Nike,400
+R-1997,green,backpack,,,7.7
+R-1998,brown,backpack,,The North Face,10.3
+R-1999,grey,duffel,,Longchamp,16.3
+R-2000,charcoal,duffel,,Nike,13.1
