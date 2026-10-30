@@ -5,6 +5,7 @@ from models import Bag
 import csv
 
 load_dotenv()
+
 PGPASSWORD=os.getenv("PGPASSWORD")
 PGUSER=os.getenv("PGUSER")
 PGHOST=os.getenv("PGHOST")
@@ -29,7 +30,7 @@ with psycopg.connect(f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} h
     with conn.cursor() as cur:
     
         for bag in bags:
-            cur.execute("INSERT INTO bag_reports VALUES (%s, %s, %s, %s, %s, %s)", 
+            cur.execute("INSERT INTO bag_reports VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING", 
             (bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg))
 
     conn.commit()
