@@ -29,8 +29,10 @@ for row in rows:
 with psycopg.connect(f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}") as conn:
     with conn.cursor() as cur:
     
-        for bag in bags:
-            cur.execute("INSERT INTO bag_reports VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING", 
-            (bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg))
+        cur.executemany("INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) " \
+        "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING", 
+        [(bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg) for bag in bags])
+        print(cur.rowcount, "rows inserted successfully.")
+
 
     conn.commit()
