@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import psycopg
 from psycopg.rows import dict_row
-from models import Bag
+from .models import Bag
 import csv
 
 load_dotenv()
@@ -35,15 +35,15 @@ def insert_bags(bags):
             cur.executemany("INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) " \
             "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING", 
             [(bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg) for bag in bags])
-            print(cur.rowcount, "rows inserted successfully.")
 
         conn.commit()
 
-def get_bag(report_id: tuple):
-    with psycopg.connect(f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}") as conn:
+def get_bag(report_id: str):
+    with psycopg.connect() as conn:
         with conn.cursor(row_factory=dict_row) as cur:
-            cur.execute("SELECT * FROM bag_reports WHERE report_id = %s", (report_id,))
+            cur.execute(
+                "SELECT report_id, colour, bag_form, shell, brand, weight_kg " \
+                "FROM bag_reports WHERE report_id = %s", (report_id,))
             bag_report = cur.fetchone()
-            print(bag_report)
 
     return bag_report

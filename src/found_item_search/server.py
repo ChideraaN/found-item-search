@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from .database import get_bag
 from .models import Bag
 
@@ -8,6 +8,14 @@ app = FastAPI()
 def root():
     return {"message": "Hello World"}
 
-@app.get("/reports/{id}", response_model=Bag)
-def get_one(id: str):
-    return get_bag(id)
+@app.get("/reports/{report_id}", response_model=Bag)
+def get_one(report_id: str):
+    bag = get_bag(report_id)
+
+    if bag is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Bag not found"
+        )
+    else:
+        return bag
