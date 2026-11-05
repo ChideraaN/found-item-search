@@ -2,6 +2,7 @@ import math
 from typing import Literal
 from pydantic import BaseModel, field_validator
 
+
 # Reusing my bag model from week 1 
 # https://github.com/ChideraaN/py-foundations/blob/main/bag.py
 
@@ -30,7 +31,7 @@ class Bag(BaseModel):
     @field_validator("weight_kg", mode="before")
     @classmethod
     def weight_is_not_too_large_or_negative(cls, value):
-        if str(value).strip() == "":
+        if value is None or str(value).strip() == "":
             return None
 
         try:

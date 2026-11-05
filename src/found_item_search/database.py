@@ -38,7 +38,7 @@ def insert_bags(bags):
 
         conn.commit()
 
-def get_bag(report_id: str):
+def get_bag_report(report_id: str):
     with psycopg.connect() as conn:
         with conn.cursor(row_factory=dict_row) as cur:
             cur.execute(
@@ -47,3 +47,16 @@ def get_bag(report_id: str):
             bag_report = cur.fetchone()
 
     return bag_report
+
+def create_bag_report(bag: Bag):
+    with psycopg.connect() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) " \
+                "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
+                (bag.report_id, bag.colour, bag.bag_form, bag.shell, bag.brand, bag.weight_kg)
+            )
+            if cur.rowcount == 0:
+                    return None
+            return bag
+        
