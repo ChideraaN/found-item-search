@@ -92,7 +92,7 @@ def get_bag_report_by_property(filters: dict[str, str | float], limit, offset):
                 LIMIT %s
                 OFFSET %s
                 """,
-                (search_values, limit, offset)
+                (search_values + [limit, offset])
             )
             bag_reports = cur.fetchall()
 
