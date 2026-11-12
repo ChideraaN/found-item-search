@@ -5,12 +5,15 @@ from pydantic import BaseModel, field_validator
 
 # Reusing my bag model from week 1 
 # https://github.com/ChideraaN/py-foundations/blob/main/bag.py
+type BagForm = Literal["suitcase", "backpack", "duffel"]
+type BagShell = Literal["hard", "soft"]
+
 
 class Bag(BaseModel):
     report_id: str
     colour: str
-    bag_form: Literal["suitcase", "backpack", "duffel"]
-    shell: Literal["hard", "soft"] | None
+    bag_form: BagForm | None
+    shell: BagShell | None
     brand: str | None
     weight_kg: float | None
 
