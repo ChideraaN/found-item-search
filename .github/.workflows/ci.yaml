@@ -8,10 +8,32 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: 3.12
+
+    # The database is a throwaway container that lives only for this run,
+    # so the dummy password below is fine. Never put a real one here.
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: bag_reports_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d bag_reports_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    # psycopg.connect() and psql both read these
+    env:
+      PGHOST: localhost
+      PGPORT: 5432
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: bag_reports_test
+
     steps:
       - uses: actions/checkout@v4
 
@@ -19,11 +41,14 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Set up Python ${{ matrix.python-version }}
-        run: uv python install ${{ matrix.python-version }}
+      - name: Set up Python 3.12
+        run: uv python install 3.12
 
       - name: Install dependencies
-        run: uv sync --frozen --python ${{ matrix.python-version }}
+        run: uv sync --frozen --python 3.12
+
+      - name: Create the table
+        run: psql -v ON_ERROR_STOP=1 -f schema.sql
 
       - name: Lint
         run: uv run ruff check .

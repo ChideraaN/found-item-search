@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:18
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      POSTGRES_DB: ${PGDATABASE}
+      PGPORT: ${PGPORT}
+    ports:
+      - "5432:${PGPORT}"
+    volumes:
+      - pgdata:/var/lib/postgresql
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # Inside Docker the database host is the service name "db", not localhost.
+      # PGHOST overrides whatever .env says. PGPORT comes from .env as is.
+      PGHOST: db
+      PGPORT: ${PGPORT}
+      PYTHONPATH: /app/src
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - .:/app  # live reload for dev; remove for deployment
+    command: uvicorn found_item_search.server:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  pgdata:

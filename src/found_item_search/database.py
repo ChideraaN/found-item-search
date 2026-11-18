@@ -13,9 +13,8 @@ PGHOST = os.getenv("PGHOST")
 PGPORT = os.getenv("PGPORT")
 PGDATABASE = os.getenv("PGDATABASE")
 
-
 def read_csv():
-    with open("reports.csv", "r", encoding="utf=8") as file:
+    with open("reports.csv", "r", encoding="utf-8") as file:
         reader = csv.DictReader(file)
         rows = list(reader)
 
