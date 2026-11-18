@@ -7,7 +7,6 @@ def test_db_seed():
         with conn.cursor(row_factory=dict_row) as cur:
             cur.execute("SELECT COUNT(*) FROM bag_reports")
             count = cur.fetchall()
-            print(count)
             assert count[0]["count"] == 5
 
 def test_get_bag_by_id(test_client):
@@ -49,6 +48,9 @@ def test_create_bag(test_client, brand, weight_kg):
     assert test_saved_response.status_code == 200
     test_saved_data = test_saved_response.json()
     assert test_saved_data["report_id"] == new_bag["report_id"]
+    assert test_saved_data["brand"] == new_bag["brand"]
+    assert test_saved_data["weight_kg"] == new_bag["weight_kg"]
+
 
 @pytest.mark.parametrize(
     "filters, expected_report_ids",
@@ -71,7 +73,6 @@ def test_get_bags_with_filters(test_client, filters, expected_report_ids):
     response = test_client.get(f"/reports?{query_params}")
     assert response.status_code == 200
     data = response.json()
-    print(f"Testing filters: {filters}, Expected report_ids: {expected_report_ids}, Actual report_ids: {[bag['report_id'] for bag in data]}")
     assert sorted([bag["report_id"] for bag in data]) == sorted(expected_report_ids)
 
 def test_same_id_twice(test_client):
@@ -89,6 +90,11 @@ def test_same_id_twice(test_client):
     data = response.json()
     assert data["detail"] == "Bag with this report_id already exists"
 
+    test_existing_row_not_changed_response = test_client.get(f"/reports/{new_bag['report_id']}")
+    assert test_existing_row_not_changed_response.status_code == 200
+    test_existing_row_not_changed_data = test_existing_row_not_changed_response.json()
+    assert test_existing_row_not_changed_data["colour"] == "blue"
+
 def test_get_nonexistent_bag(test_client):
     response = test_client.get("/reports/R-9999")
     assert response.status_code == 404
@@ -97,7 +103,7 @@ def test_get_nonexistent_bag(test_client):
 
 def test_bad_bag_form(test_client):
     new_bag = {
-            "report_id": "R-1001",
+            "report_id": "R-1008",
             "colour": "purple",
             "bag_form": "banana",
             "shell": "soft",
@@ -106,5 +112,31 @@ def test_bad_bag_form(test_client):
         }
 
     response = test_client.post("/reports", json=new_bag)
+    assert response.status_code == 422
+
+    check_not_in_db_response = test_client.get(f"/reports/{new_bag['report_id']}")
+    assert check_not_in_db_response.status_code == 404
+
+def test_get_invalid_bag_form(test_client):
+    response = test_client.get("/reports?bag_form=banana")
+    assert response.status_code == 422
+
+def test_valid_limit_offset(test_client):
+    response = test_client.get("/reports?limit=2&offset=1")
+    assert response.status_code == 200
     data = response.json()
+    assert len(data) == 2
+    assert data[0]["report_id"] == "R-1002"
+    assert data[1]["report_id"] == "R-1003"
+
+def test_second_page_with_limit_offset(test_client):
+    response = test_client.get("/reports?limit=2&offset=2")
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data) == 2
+    assert data[0]["report_id"] == "R-1003"
+    assert data[1]["report_id"] == "R-1004"
+
+def test_zero_limit(test_client):
+    response = test_client.get("/reports?limit=0")
     assert response.status_code == 422
