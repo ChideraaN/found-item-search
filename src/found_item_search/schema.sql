@@ -2,7 +2,7 @@
 
 -- DROP TABLE IF EXISTS public.bag_reports;
 
-CREATE TABLE IF NOT EXISTS public.bag_reports
+CREATE TABLE IF NOT EXISTS bag_reports
 (
     report_id text,
     colour text,
