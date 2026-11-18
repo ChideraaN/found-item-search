@@ -47,7 +47,7 @@ def db_setup():
     print("Setting up test database...")
     db_seed()
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def test_client():
     from found_item_search.server import app
     client = TestClient(app)
