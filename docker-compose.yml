@@ -9,7 +9,7 @@ services:
       POSTGRES_DB: ${PGDATABASE}
       PGPORT: ${PGPORT}
     ports:
-      - "5432:${PGPORT}"
+      - "${PGPORT}: 5432"
     volumes:
       - pgdata:/var/lib/postgresql
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
@@ -27,7 +27,6 @@ services:
       # Inside Docker the database host is the service name "db", not localhost.
       # PGHOST overrides whatever .env says. PGPORT comes from .env as is.
       PGHOST: db
-      PGPORT: ${PGPORT}
       PYTHONPATH: /app/src
     ports:
       - "8000:8000"
