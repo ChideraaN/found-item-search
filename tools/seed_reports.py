@@ -6,19 +6,53 @@ Usage:
     python seed_reports.py -n 5000 -o seed.csv
     python seed_reports.py --broken-rate 0.1 --seed 7
 """
+
 import argparse
 import csv
 import random
 
-COLOURS = ["black", "navy", "blue", "red", "green", "grey", "silver", "brown",
-           "pink", "orange", "purple", "white", "yellow", "teal", "beige",
-           "charcoal", "olive", "maroon"]
+COLOURS = [
+    "black",
+    "navy",
+    "blue",
+    "red",
+    "green",
+    "grey",
+    "silver",
+    "brown",
+    "pink",
+    "orange",
+    "purple",
+    "white",
+    "yellow",
+    "teal",
+    "beige",
+    "charcoal",
+    "olive",
+    "maroon",
+]
 
 # bag_form -> (brands, (min_kg, max_kg), has_shell)
 FORMS = {
-    "suitcase": (["Samsonite", "Tumi", "Away", "Rimowa", "American Tourister",
-                  "Delsey", "Antler", "Briggs & Riley"], (10.0, 24.0), True),
-    "backpack": (["Osprey", "The North Face", "Fjallraven", "Berghaus"], (4.0, 12.0), False),
+    "suitcase": (
+        [
+            "Samsonite",
+            "Tumi",
+            "Away",
+            "Rimowa",
+            "American Tourister",
+            "Delsey",
+            "Antler",
+            "Briggs & Riley",
+        ],
+        (10.0, 24.0),
+        True,
+    ),
+    "backpack": (
+        ["Osprey", "The North Face", "Fjallraven", "Berghaus"],
+        (4.0, 12.0),
+        False,
+    ),
     "duffel": (["Nike", "Adidas", "Longchamp"], (6.0, 18.0), False),
 }
 
@@ -45,10 +79,19 @@ def break_row(row, rng):
     report_id is the primary key, so it is never touched: every row keeps a
     unique, well-formed ID and only the other columns can be broken.
     """
-    kind = rng.choice([
-        "missing_colour", "bad_form", "bad_shell", "shell_on_backpack", "missing_weight",
-        "negative_weight", "outlier_weight", "text_weight", "messy_case",
-    ])
+    kind = rng.choice(
+        [
+            "missing_colour",
+            "bad_form",
+            "bad_shell",
+            "shell_on_backpack",
+            "missing_weight",
+            "negative_weight",
+            "outlier_weight",
+            "text_weight",
+            "messy_case",
+        ]
+    )
     if kind == "missing_colour":
         row["colour"] = ""
     elif kind == "bad_form":
@@ -76,10 +119,15 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("-n", "--count", type=int, default=1000)
     p.add_argument("-o", "--out", default="reports.csv")
-    p.add_argument("--broken-rate", type=float, default=0.05,
-                   help="fraction of rows to corrupt (default 0.05)")
-    p.add_argument("--seed", type=int, default=42,
-                   help="RNG seed so runs are reproducible")
+    p.add_argument(
+        "--broken-rate",
+        type=float,
+        default=0.05,
+        help="fraction of rows to corrupt (default 0.05)",
+    )
+    p.add_argument(
+        "--seed", type=int, default=42, help="RNG seed so runs are reproducible"
+    )
     p.add_argument("--start", type=int, default=1001, help="first report number")
     args = p.parse_args()
 
@@ -94,7 +142,9 @@ def main():
         rows.append(row)
 
     ids = [r["report_id"] for r in rows]
-    assert len(ids) == len(set(ids)) and all(ids), "report_id must be unique and non-empty"
+    assert len(ids) == len(set(ids)) and all(ids), (
+        "report_id must be unique and non-empty"
+    )
 
     with open(args.out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=HEADER)

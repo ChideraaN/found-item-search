@@ -8,13 +8,13 @@ from fastapi.testclient import TestClient
 
 load_dotenv()
 
-os.environ["PGDATABASE"]="bag_reports_test"
+os.environ["PGDATABASE"] = "bag_reports_test"
 
-PGPASSWORD=os.getenv("PGPASSWORD")
-PGUSER=os.getenv("PGUSER")
-PGHOST=os.getenv("PGHOST")
-PGPORT=os.getenv("PGPORT")
-PGDATABASE=os.getenv("PGDATABASE")
+PGPASSWORD = os.getenv("PGPASSWORD")
+PGUSER = os.getenv("PGUSER")
+PGHOST = os.getenv("PGHOST")
+PGPORT = os.getenv("PGPORT")
+PGDATABASE = os.getenv("PGDATABASE")
 
 db_test_values = [
     ("R-1001", "blue", "backpack", "soft", "brand_a", 2.5),
@@ -24,20 +24,25 @@ db_test_values = [
     ("R-1005", "black", "duffel", "soft", "brand_e", 2.2),
 ]
 
+
 def db_seed():
     with psycopg.connect() as conn:
         with conn.cursor() as cur:
-            if conn.info.dbname == 'bag_reports_test':
+            if conn.info.dbname == "bag_reports_test":
                 for value in db_test_values:
-                    cur.execute("INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) " \
-                        "VALUES (%s, %s, %s, %s, %s, %s)", value)
+                    cur.execute(
+                        "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
+                        "VALUES (%s, %s, %s, %s, %s, %s)",
+                        value,
+                    )
 
 
 def db_cleanup():
     with psycopg.connect() as conn:
         with conn.cursor() as cur:
-            if conn.info.dbname == 'bag_reports_test':
+            if conn.info.dbname == "bag_reports_test":
                 cur.execute("TRUNCATE bag_reports")
+
 
 @pytest.fixture(autouse=True)
 def db_setup():
@@ -47,8 +52,10 @@ def db_setup():
     print("Setting up test database...")
     db_seed()
 
+
 @pytest.fixture()
 def test_client():
     from found_item_search.server import app
+
     client = TestClient(app)
     return client
