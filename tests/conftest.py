@@ -4,6 +4,7 @@ import psycopg
 from psycopg.rows import dict_row
 import pytest
 import os
+from fastapi.testclient import TestClient
 
 load_dotenv()
 
@@ -45,3 +46,9 @@ def db_setup():
 
     print("Setting up test database...")
     db_seed()
+
+@pytest.fixture(autouse=True)
+def test_client():
+    from found_item_search.server import app
+    client = TestClient(app)
+    return client
