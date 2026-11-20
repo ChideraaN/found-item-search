@@ -26,13 +26,13 @@ db_test_values = [
 
 def db_seed():
     with psycopg.connect() as conn, conn.cursor() as cur:
-            if conn.info.dbname == "bag_reports_test":
-                for value in db_test_values:
-                    cur.execute(
-                        "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
-                        "VALUES (%s, %s, %s, %s, %s, %s)",
-                        value,
-                    )
+        if conn.info.dbname == "bag_reports_test":
+            for value in db_test_values:
+                cur.execute(
+                    "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
+                    "VALUES (%s, %s, %s, %s, %s, %s)",
+                    value,
+                )
 
 
 def db_cleanup():

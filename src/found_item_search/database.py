@@ -34,26 +34,29 @@ def read_csv():
 
 
 def insert_bags(bags):
-    with psycopg.connect(
-        f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}"
-    ) as conn, conn.cursor() as cur:
-            cur.executemany(
-                "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
-                "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
-                [
-                    (
-                        bag.report_id,
-                        bag.colour,
-                        bag.bag_form,
-                        bag.shell,
-                        bag.brand,
-                        bag.weight_kg,
-                    )
-                    for bag in bags
-                ],
-            )
+    with (
+        psycopg.connect(
+            f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}"
+        ) as conn,
+        conn.cursor() as cur,
+    ):
+        cur.executemany(
+            "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
+            "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
+            [
+                (
+                    bag.report_id,
+                    bag.colour,
+                    bag.bag_form,
+                    bag.shell,
+                    bag.brand,
+                    bag.weight_kg,
+                )
+                for bag in bags
+            ],
+        )
 
-            conn.commit()
+        conn.commit()
 
 
 def get_bag_report(report_id: str):
@@ -70,22 +73,22 @@ def get_bag_report(report_id: str):
 
 def create_bag_report(bag: Bag):
     with psycopg.connect() as conn, conn.cursor() as cur:
-            cur.execute(
-                "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
-                "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
-                (
-                    bag.report_id,
-                    bag.colour,
-                    bag.bag_form,
-                    bag.shell,
-                    bag.brand,
-                    bag.weight_kg,
-                ),
-            )
+        cur.execute(
+            "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
+            "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
+            (
+                bag.report_id,
+                bag.colour,
+                bag.bag_form,
+                bag.shell,
+                bag.brand,
+                bag.weight_kg,
+            ),
+        )
 
-            if cur.rowcount == 0:
-                return None
-            return bag
+        if cur.rowcount == 0:
+            return None
+        return bag
 
 
 def get_bag_report_by_property(filters: dict[str, str | float], limit, offset):
