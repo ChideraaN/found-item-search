@@ -5,7 +5,7 @@ import psycopg
 from dotenv import load_dotenv
 from psycopg.rows import dict_row
 
-from .models import Bag
+from found_item_search.models import Bag
 
 load_dotenv()
 

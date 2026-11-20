@@ -1,4 +1,5 @@
 import math
+from dataclasses import dataclass
 from typing import Literal
 
 from pydantic import BaseModel, field_validator
@@ -59,7 +60,18 @@ class Bag(BagBase):
 
     @field_validator("report_id", mode="before")
     @classmethod
-    def report_id_not_empty(cls, value):   # different name, so it no longer replaces the parent's
+    def report_id_not_empty(
+        cls, value
+    ):  # different name, so it no longer replaces the parent's
         if is_blank(value):
             raise ValueError("Field is Empty")
         return clean(value)
+
+
+@dataclass
+class ExtractionResult:
+    bag: MiniBag | None
+    failure_reason: str | None
+    input_tokens: int
+    output_tokens: int
+    cost: float
