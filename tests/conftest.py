@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 import psycopg
-from psycopg.rows import dict_row
 import pytest
 import os
 from fastapi.testclient import TestClient
