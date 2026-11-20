@@ -25,8 +25,7 @@ db_test_values = [
 
 
 def db_seed():
-    with psycopg.connect() as conn:
-        with conn.cursor() as cur:
+    with psycopg.connect() as conn, conn.cursor() as cur:
             if conn.info.dbname == "bag_reports_test":
                 for value in db_test_values:
                     cur.execute(

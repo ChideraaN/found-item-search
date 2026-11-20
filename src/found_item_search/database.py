@@ -36,8 +36,7 @@ def read_csv():
 def insert_bags(bags):
     with psycopg.connect(
         f"dbname={PGDATABASE} user={PGUSER} password={PGPASSWORD} host={PGHOST} port={PGPORT}"
-    ) as conn:
-        with conn.cursor() as cur:
+    ) as conn, conn.cursor() as cur:
             cur.executemany(
                 "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
                 "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",
@@ -54,7 +53,7 @@ def insert_bags(bags):
                 ],
             )
 
-        conn.commit()
+            conn.commit()
 
 
 def get_bag_report(report_id: str):
@@ -70,8 +69,7 @@ def get_bag_report(report_id: str):
 
 
 def create_bag_report(bag: Bag):
-    with psycopg.connect() as conn:
-        with conn.cursor() as cur:
+    with psycopg.connect() as conn, conn.cursor() as cur:
             cur.execute(
                 "INSERT INTO bag_reports (report_id, colour, bag_form, shell, brand, weight_kg) "
                 "VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT(report_id) DO NOTHING",

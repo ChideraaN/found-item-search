@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Generate seed data for lost-bag reports (CSV).
 
 Usage:
