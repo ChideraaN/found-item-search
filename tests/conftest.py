@@ -1,8 +1,8 @@
 import os
-from dotenv import load_dotenv
+
 import psycopg
 import pytest
-import os
+from dotenv import load_dotenv
 from fastapi.testclient import TestClient
 
 load_dotenv()
@@ -37,10 +37,9 @@ def db_seed():
 
 
 def db_cleanup():
-    with psycopg.connect() as conn:
-        with conn.cursor() as cur:
-            if conn.info.dbname == "bag_reports_test":
-                cur.execute("TRUNCATE bag_reports")
+    with psycopg.connect() as conn, conn.cursor() as cur:
+        if conn.info.dbname == "bag_reports_test":
+            cur.execute("TRUNCATE bag_reports")
 
 
 @pytest.fixture(autouse=True)

@@ -1,6 +1,6 @@
-from operator import ge
 from fastapi import FastAPI, HTTPException, Query
-from .database import get_bag_report, create_bag_report, get_bag_report_by_property
+
+from .database import create_bag_report, get_bag_report, get_bag_report_by_property
 from .models import Bag, BagForm, BagShell
 
 app = FastAPI()

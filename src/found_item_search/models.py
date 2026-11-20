@@ -1,7 +1,7 @@
 import math
 from typing import Literal
-from pydantic import BaseModel, field_validator
 
+from pydantic import BaseModel, field_validator
 
 # Reusing my bag model from week 1
 # https://github.com/ChideraaN/py-foundations/blob/main/bag.py

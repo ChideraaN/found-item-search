@@ -1,14 +1,13 @@
 import psycopg
-from psycopg.rows import dict_row
 import pytest
+from psycopg.rows import dict_row
 
 
 def test_db_seed():
-    with psycopg.connect() as conn:
-        with conn.cursor(row_factory=dict_row) as cur:
-            cur.execute("SELECT COUNT(*) FROM bag_reports")
-            count = cur.fetchall()
-            assert count[0]["count"] == 5
+    with psycopg.connect() as conn, conn.cursor(row_factory=dict_row) as cur:
+        cur.execute("SELECT COUNT(*) FROM bag_reports")
+        count = cur.fetchall()
+        assert count[0]["count"] == 5
 
 
 def test_get_bag_by_id(test_client):

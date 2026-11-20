@@ -1,9 +1,11 @@
-import os
-from dotenv import load_dotenv
-import psycopg
-from psycopg.rows import dict_row
-from .models import Bag
 import csv
+import os
+
+import psycopg
+from dotenv import load_dotenv
+from psycopg.rows import dict_row
+
+from .models import Bag
 
 load_dotenv()
 
@@ -12,6 +14,7 @@ PGUSER = os.getenv("PGUSER")
 PGHOST = os.getenv("PGHOST")
 PGPORT = os.getenv("PGPORT")
 PGDATABASE = os.getenv("PGDATABASE")
+
 
 def read_csv():
     with open("reports.csv", "r", encoding="utf-8") as file:
@@ -24,7 +27,7 @@ def read_csv():
         try:
             bag = Bag.model_validate(row)
             bags.append(bag)
-        except ValueError as e:
+        except ValueError:
             fails.append(row)
 
     return bags
@@ -55,14 +58,13 @@ def insert_bags(bags):
 
 
 def get_bag_report(report_id: str):
-    with psycopg.connect() as conn:
-        with conn.cursor(row_factory=dict_row) as cur:
-            cur.execute(
-                "SELECT report_id, colour, bag_form, shell, brand, weight_kg "
-                "FROM bag_reports WHERE report_id = %s",
-                (report_id,),
-            )
-            bag_report = cur.fetchone()
+    with psycopg.connect() as conn, conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            "SELECT report_id, colour, bag_form, shell, brand, weight_kg "
+            "FROM bag_reports WHERE report_id = %s",
+            (report_id,),
+        )
+        bag_report = cur.fetchone()
 
     return bag_report
 
@@ -109,10 +111,9 @@ def get_bag_report_by_property(filters: dict[str, str | float], limit, offset):
     else:
         where_clause = "TRUE"
 
-    with psycopg.connect() as conn:
-        with conn.cursor(row_factory=dict_row) as cur:
-            cur.execute(
-                f"""
+    with psycopg.connect() as conn, conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            f"""
                 SELECT report_id, colour, bag_form, shell, brand, weight_kg
                 FROM bag_reports
                 WHERE {where_clause}
@@ -120,11 +121,8 @@ def get_bag_report_by_property(filters: dict[str, str | float], limit, offset):
                 LIMIT %s
                 OFFSET %s
                 """,
-                (search_values + [limit, offset]),
-            )
-            bag_reports = cur.fetchall()
+            (search_values + [limit, offset]),
+        )
+        bag_reports = cur.fetchall()
 
     return bag_reports
-
-bags = read_csv()
-insert_bags(bags)
