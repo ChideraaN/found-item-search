@@ -75,3 +75,9 @@ class ExtractionResult:
     input_tokens: int
     output_tokens: int
     cost: float
+
+class NotABagError(Exception):
+    pass
+
+class MultipleBagsError(Exception):
+    pass

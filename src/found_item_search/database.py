@@ -4,6 +4,7 @@ import os
 import psycopg
 from dotenv import load_dotenv
 from psycopg.rows import dict_row
+import found_item_search.bag_description_extractor
 
 from found_item_search.models import Bag
 
